@@ -1,0 +1,22 @@
+name: PunchSnowball
+version: 1.7.0
+main: com.example.punchsnowball.PunchSnowballPlugin
+api-version: '1.21.11'
+description: Frost custom PvP items with GUI configuration and trusted players
+commands:
+  frost:
+    description: Frost custom items, configuration menu and player trust
+    usage: /frost help
+permissions:
+  frost.give:
+    description: Give Frost items
+    default: op
+  frost.reload:
+    description: Reload Frost config
+    default: op
+  frost.config:
+    description: Open the in-game Frost weapon settings GUI
+    default: op
+  frost.trust:
+    description: Manage your personal trusted-player list
+    default: true

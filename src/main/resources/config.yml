@@ -1,0 +1,56 @@
+# Edit this file in plugins/PunchSnowball/config.yml on your SERVER.
+# Or edit settings through the OP-only in-game /frost config menu.
+# Run /frost reload as OP to apply manual file changes without restarting.
+# This is for changing SETTINGS; Java logic changes still require a new JAR.
+# Freeze will enforce player position and view direction server-side, but cannot
+# completely disable local mouse/camera movement without client mods.
+
+snowball:
+  cooldown-seconds: 7
+  slowness-seconds: 2
+  horizontal-velocity: 2.45
+  vertical-velocity: 0.40
+
+tnt:
+  cooldown-seconds: 10
+  fuse-seconds: 3
+  # Maximum block-breaking and player-damage distance in blocks.
+  radius-blocks: 4.0
+  # TNT explosion strength: 4.0 is vanilla TNT, 2.5 is smaller.
+  # Actual block destruction varies by material and surrounding blocks.
+  explosion-power: 2.5
+  break-blocks: true
+  # Minecraft health points: 4.0 = 2 hearts before extra protection effects.
+  # Uses magic damage to bypass armor, including netherite.
+  damage-health-points: 4.0
+
+windcharge:
+  cooldown-seconds: 20
+  freeze-seconds: 3
+  # Show icy/powder-snow screen vignette + shivering effect.
+  powder-snow-overlay: true
+
+# Old Storm Trident from v1.5 now becomes the Grapple Trident.
+# This setting controls additional Fire Aspect burning time on thrown hit.
+trident:
+  fire-seconds: 8
+
+grapple:
+  cooldown-seconds: 20
+  horizontal-velocity: 1.5
+  vertical-velocity: 0.35
+
+# Riptide only works in rain or water. The three-strike ability activates
+# ONLY after Riptide propulsion damages another player, not ordinary melee.
+riptide:
+  cooldown-seconds: 20
+  damage-per-strike-health-points: 3.0
+  ticks-between-strikes: 8
+
+firework:
+  cooldown-seconds: 45
+  missiles: 5
+  damage-health-points: 1.0
+  target-range-blocks: 32.0
+  sky-delay-ticks: 25
+  homing-speed: 0.85
